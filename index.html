@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Coin Guess</title>
+</head>
+
+<body>
+	<h1>Coin Guess</h1>
+
+	<label id="accountLabel">Account: None</label>
+
+	<button id="connectButton" onclick="bundle.connect()">Connect</button><br><br>
+
+	<label id="resultLabel">No Bet</label>
+
+	<button id="reloadButton" onclick="bundle.check()">Reload</button><br><br>
+
+	Selection:
+	<select id="selectionInput">
+		<option>Heads</option>
+		<option>Tails</option>
+	</select><br><br>
+
+	Password:
+	<input type="integer" id="passwordInput" value=0><br><br>
+
+	<button id="betButton" onclick="bundle.bet()">Bet</button>
+	<button id="guessButton" onclick="bundle.guess()">Guess</button>
+	<button id="revealButton" onclick="bundle.reveal()">Reveal</button>
+</body>
+
+<script src="./bundle.js" type="text/javascript"></script>
+
+</html>
